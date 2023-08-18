@@ -1,5 +1,5 @@
 {
-  "name": "@strapi/plugin-telegram-bot",
+  "name": "Telegram-bot",
   "version": "1.0.0",
   "access": "public",
   "description": "Telegram bot for sending messages.",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kcepriu/strapi-plugin-send-to-telegram.git"
+    "url": "git@github.com:Kcepriu/strapi-plugin-send-to-telegram.git"
   },
   "dependencies": {
     "@strapi/design-system": "^1.6.3",
