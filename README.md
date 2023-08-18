@@ -11,9 +11,9 @@ Plugin Strapi for sending messages to a Telegram bot.
 - [Configuration](configuration)
 - [References](references)
 
-# ✨ [Features]
+# ✨ Features
 
-# ⏳ [Installation]
+# ⏳ Installation
 
 ## Via Strapi Marketplace
 
@@ -36,6 +36,6 @@ As a next step you must configure your the plugin by the way you want to. See **
 
 All done. Enjoy 🎉
 
-# 🔧 [Configuration]
+# 🔧 Configuration
 
-# 📚 [References]
+# 📚 References
