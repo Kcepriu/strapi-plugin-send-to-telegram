@@ -1,6 +1,7 @@
 {
   "name": "@strapi/plugin-telegram-bot",
   "version": "1.0.0",
+  "access": "public",
   "description": "Telegram bot for sending messages.",
   "strapi": {
     "name": "Telegram-bot",
@@ -41,13 +42,18 @@
     "styled-components": "^5.3.6",
     "@strapi/strapi": "^4.0.0"
   },
+  "resolutions": {
+    "yargs": "^17.2.1"
+  },
   "author": {
-    "name": "Serhii Kostiuchenko"
+    "name": "Serhii Kostiuchenko",
+    "email": "kcepriu@gmail.com",
+    "url": "https://www.linkedin.com/in/serhii-kostiuchenko"
   },
   "maintainers": [
     {
       "name": "Serhii Kostiuchenko",
-      "email": "mailto:serhii.kostuchenko@gmail.com",
+      "email": "kcepriu@gmail.com",
       "url": "https://www.linkedin.com/in/serhii-kostiuchenko"
     }
   ],
