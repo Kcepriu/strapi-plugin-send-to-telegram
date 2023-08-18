@@ -3,19 +3,19 @@ import type { IChat, IInformationAboutMe } from "../../../types/bot.types";
 
 const botRequest = {
   getMe: async (): Promise<IInformationAboutMe> => {
-    return await request("/telegram-bot/me", {
+    return await request("/plugin-telegram-bot/me", {
       method: "GET",
     });
   },
 
   geChats: async (): Promise<IChat[]> => {
-    return await request("/telegram-bot/find", {
+    return await request("/plugin-telegram-bot/find", {
       method: "GET",
     });
   },
 
   deleteChat: async (chat: IChat): Promise<IChat> => {
-    const result = await request(`/telegram-bot/delete/${chat.id}`, {
+    const result = await request(`/plugin-telegram-bot/delete/${chat.id}`, {
       method: "DELETE",
     });
 
@@ -23,7 +23,7 @@ const botRequest = {
   },
 
   updateChat: async (id: number, chat: IChat): Promise<IChat> => {
-    const result = await request(`/telegram-bot/update/${id}`, {
+    const result = await request(`/plugin-telegram-bot/update/${id}`, {
       method: "PUT",
       body: chat,
     });

@@ -1,10 +1,10 @@
 {
-  "name": "Telegram-bot",
-  "version": "1.0.0",
+  "name": "plugin-telegram-bot",
+  "version": "1.0.8",
   "access": "public",
   "description": "Telegram bot for sending messages.",
   "strapi": {
-    "name": "Telegram-bot",
+    "name": "plugin-telegram-bot",
     "description": "Telegram bot for sending messages.",
     "kind": "plugin"
   },
@@ -63,7 +63,8 @@
   },
   "scripts": {
     "develop": "tsc -p tsconfig.server.json -w",
-    "build": "tsc -p tsconfig.server.json"
+    "build": "tsc -p tsconfig.server.json",
+    "build-admin": "tsc -p tsconfig.json"
   },
   "license": "MIT"
 }

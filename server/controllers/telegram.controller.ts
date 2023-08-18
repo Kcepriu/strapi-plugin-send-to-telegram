@@ -4,7 +4,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
   async find(ctx) {
     try {
       return await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .service("telegramServices")
         .find(ctx.query);
     } catch (err) {
@@ -18,7 +18,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
 
     try {
       return await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .service("telegramServices")
         .find(ctx.query);
     } catch (err) {
@@ -29,7 +29,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
   async create(ctx) {
     try {
       ctx.body = await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .service("telegramServices")
         .create(ctx.request.body);
     } catch (err) {
@@ -40,7 +40,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
   async delete(ctx) {
     try {
       ctx.body = await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .service("telegramServices")
         .delete(ctx.params.id);
     } catch (err) {
@@ -51,7 +51,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
   async update(ctx) {
     try {
       ctx.body = await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .service("telegramServices")
         .update(ctx.params.id, ctx.request.body);
     } catch (err) {

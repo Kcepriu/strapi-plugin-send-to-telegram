@@ -4,7 +4,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
   async sendMessageToAdmins(ctx) {
     try {
       ctx.body = await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .telegramBot.sendMessageToAdmins(ctx.request.body.message);
     } catch (err) {
       ctx.throw(500, err.message);
@@ -13,7 +13,9 @@ export default ({ strapi }: { strapi: Strapi }) => ({
 
   async isPolling(ctx) {
     try {
-      ctx.body = await strapi.plugin("telegram-bot").telegramBot.isPolling();
+      ctx.body = await strapi
+        .plugin("plugin-telegram-bot")
+        .telegramBot.isPolling();
     } catch (err) {
       ctx.throw(500, err.message);
     }
@@ -21,7 +23,9 @@ export default ({ strapi }: { strapi: Strapi }) => ({
 
   async getUpdates(ctx) {
     try {
-      ctx.body = await strapi.plugin("telegram-bot").telegramBot.getUpdates();
+      ctx.body = await strapi
+        .plugin("plugin-telegram-bot")
+        .telegramBot.getUpdates();
     } catch (err) {
       ctx.throw(500, err.message);
     }
@@ -29,7 +33,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
 
   async getMe(ctx) {
     try {
-      ctx.body = await strapi.plugin("telegram-bot").telegramBot.getMe();
+      ctx.body = await strapi.plugin("plugin-telegram-bot").telegramBot.getMe();
     } catch (err) {
       ctx.throw(500, err.message);
     }

@@ -62,14 +62,14 @@ class Bot {
       const { chatId } = data;
 
       const chats = await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .service("telegramServices")
         .find({ filters: { chatId } });
 
       if (chats.length !== 0) return "You are already registered";
 
       await strapi
-        .plugin("telegram-bot")
+        .plugin("plugin-telegram-bot")
         .service("telegramServices")
         .create(data);
     } catch (err) {
@@ -83,7 +83,7 @@ class Bot {
     if (!this.bot) throw new Error("No connect bot");
 
     const adminChats = await strapi
-      .plugin("telegram-bot")
+      .plugin("plugin-telegram-bot")
       .service("telegramServices")
       .find({ filters: { isSendInformation: true } });
 
