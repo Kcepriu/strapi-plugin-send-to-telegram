@@ -7,7 +7,7 @@ Plugin Strapi for sending messages to a Telegram bot.
 ## Table of Contents
 
 - [✨ Features](#✨-features)
-- [⏳ Installation](#⏳-Iinstallation)
+- [⏳ Installation](#⏳-installation)
 - [🔧 Configuration](#🔧-configuration)
 - [🖐 Using](#🖐-using)
 - [📚 References](#📚-references)
@@ -27,7 +27,7 @@ Currently, this is not implemented.
 (Use yarn to install this plugin within your Strapi project (recommended). [Install yarn with these docs.](https://yarnpkg.com/lang/en/docs/install/))
 
 ```
-  yarn add @api
+  yarn add plugin-telegram-bot
 ```
 
 After successful installation you've to re-build your Strapi instance. To archive that simply use:
@@ -73,7 +73,7 @@ All done. Enjoy 🎉
 - To send messages to all selected users, make a `POST` request.
 
   ```
-  http://127.0.0.1:1337/telegram-bot/send-message
+  http://[addres sever]/plugin-telegram-bot/send-message
 
     {
       "message": "My first message"

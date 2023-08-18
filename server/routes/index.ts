@@ -65,7 +65,7 @@ export default [
     handler: "botController.getMe",
     config: {
       policies: [],
-      auth: false,
+      //auth: false,
     },
   },
 

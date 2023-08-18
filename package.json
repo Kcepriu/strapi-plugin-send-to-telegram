@@ -1,6 +1,6 @@
 {
   "name": "plugin-telegram-bot",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "access": "public",
   "description": "Telegram bot for sending messages.",
   "strapi": {
